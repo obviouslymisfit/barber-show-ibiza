@@ -1389,6 +1389,19 @@ body {
 /* ─────────────────────────────────────────
    RESPONSIVE
 ───────────────────────────────────────── */
+/* Utility grids used in place of unresponsive inline styles */
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
 @media (max-width: 960px) {
   .value-grid { grid-template-columns: repeat(2, 1fr); }
   .pricing-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1399,6 +1412,7 @@ body {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: span 2; }
   .included-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3col { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1432,6 +1446,8 @@ body {
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto; }
   .availability-grid { grid-template-columns: repeat(3, 1fr); }
+  .grid-3col { grid-template-columns: 1fr; }
+  .grid-2col { grid-template-columns: 1fr; }
 
   .page-hero { min-height: 100svh; }
   .hero-title { font-size: clamp(2.25rem, 10vw, 4rem); }
