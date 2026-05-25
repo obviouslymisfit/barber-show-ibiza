@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+  <a href="#main" class="btn btn--outline skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
     <div class="container">
@@ -104,22 +104,22 @@
 
         <!-- ── SIDEBAR ── -->
         <aside class="article-sidebar" style="position: sticky; top: 6rem;" aria-label="Article sidebar">
-          <div style="background: var(--bg-card); padding: var(--space-md); border-top: 2px solid var(--orange); margin-bottom: var(--space-md);">
-            <span style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-subtle); display: block; margin-bottom: 0.5rem;">Written by</span>
-            <p style="font-family: var(--f-heading); font-size: var(--fs-h4); color: var(--accent);">Marc</p>
-            <p style="font-size: var(--fs-sm); color: var(--text-muted); margin-top: 0.3rem;">Founder · Senior Barber</p>
+          <div class="sidebar-box sidebar-box--accent">
+            <span class="sidebar-box__label">Written by</span>
+            <p class="sidebar-box__name">Marc</p>
+            <p class="sidebar-box__sub">Founder · Senior Barber</p>
           </div>
-          <div style="background: var(--bg-card); padding: var(--space-md); border-top: 2px solid var(--bg-rule);">
-            <span style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-subtle); display: block; margin-bottom: var(--space-sm);">Book a service</span>
-            <p style="font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: var(--space-sm); line-height: 1.6;">Ready to put the theory into practice? Book a skin fade or classic cut with the team.</p>
-            <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" style="width: 100%; justify-content: center;" target="_blank" rel="noopener noreferrer">Book Now</a>
+          <div class="sidebar-box sidebar-box--rule">
+            <span class="sidebar-box__label">Book a service</span>
+            <p class="sidebar-box__desc">Ready to put the theory into practice? Book a skin fade or classic cut with the team.</p>
+            <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book Now</a>
           </div>
         </aside>
 
       </div>
 
       <!-- ── RELATED ARTICLES ── -->
-      <section style="padding-block: var(--space-xl); border-top: 1px solid var(--bg-rule); margin-top: var(--space-xl);" aria-labelledby="related-title">
+      <section class="article-related" aria-labelledby="related-title">
         <span class="eyebrow">Continue Reading</span>
         <h2 class="section-title" id="related-title">Related <em>articles</em></h2>
         <div class="news-grid">
@@ -129,7 +129,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Craft</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Texture, Grain, and the Language of Hair</a></h3>
+              <h3 class="news-card__title"><a href="news.html">Texture, Grain, and the Language of Hair</a></h3>
               <p class="news-card__excerpt">Hair has a direction, a weight, a personality. Understanding those qualities before the scissors move is what separates craft from habit.</p>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
@@ -140,7 +140,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Culture</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Barbershop as a Third Place</a></h3>
+              <h3 class="news-card__title"><a href="news.html">The Barbershop as a Third Place</a></h3>
               <p class="news-card__excerpt">Between home and work, there is a third kind of space — one where the rhythm is different and the conversation earns its depth.</p>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
@@ -151,7 +151,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Ritual</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Morning Shave as a Practice</a></h3>
+              <h3 class="news-card__title"><a href="news.html">The Morning Shave as a Practice</a></h3>
               <p class="news-card__excerpt">There is a difference between a task completed and a ritual observed. The straight razor shave, done well, belongs in the second category.</p>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>

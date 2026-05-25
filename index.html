@@ -12,10 +12,8 @@
 </head>
 <body>
 
-  <!-- ── SKIP LINK ── -->
-  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+  <a href="#main" class="btn btn--outline skip-link">Skip to content</a>
 
-  <!-- ── HEADER ── -->
   <header class="site-header" role="banner">
     <div class="container">
       <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
@@ -36,7 +34,6 @@
     </div>
   </header>
 
-  <!-- ── MOBILE OVERLAY ── -->
   <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
     <a href="services.html" class="nav-overlay__link">Services</a>
     <a href="coworking.html" class="nav-overlay__link">Coworking</a>
@@ -53,7 +50,7 @@
       <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80');" role="img" aria-label="Barber Shop interior with warm lighting"></div>
       <div class="container">
         <span class="hero-eyebrow">Barbershop · Ibiza</span>
-        <h1 class="hero-title" id="hero-title">Where <em>craft </em> finds its form.</h1>
+        <h1 class="hero-title" id="hero-title">Where <em>craft</em> finds its form.</h1>
         <p class="hero-sub">Premium grooming and creative studio in the heart of Eivissa. Precision work, considered in every detail.</p>
         <div class="hero-actions">
           <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
@@ -105,7 +102,7 @@
             <span class="eyebrow">Our Story</span>
             <h2 class="section-title" id="about-intro-title">A shop built on <em>deliberate</em> choices</h2>
             <p class="section-lead">Barber Show Ibiza was not built for the crowd. It was built for people who know what they want and value the skill behind it.</p>
-            <p style="color: var(--text-muted); margin-bottom: var(--space-md); font-size: var(--fs-sm); line-height: 1.75;">We exist at the intersection of grooming and creative culture. The barbershop is precise and unhurried. The studio alongside it is built for professionals who need a space that matches the quality of their work. Both share the same conviction: that intentional work, done with restraint, produces results that last.</p>
+            <p>We exist at the intersection of grooming and creative culture. The barbershop is precise and unhurried. The studio alongside it is built for professionals who need a space that matches the quality of their work. Both share the same conviction: that intentional work, done with restraint, produces results that last.</p>
             <a href="about.html" class="btn btn--outline">About the Brand</a>
           </div>
         </div>
@@ -121,28 +118,28 @@
           <p class="section-lead">Two primary categories, each approached with the same discipline. From a classic cut to a hot towel shave — everything is performed with care.</p>
         </div>
         <div class="grid-2col" style="margin-top: var(--space-md);">
-          <a href="services.html#hair" class="card" style="display: block; overflow: hidden; text-decoration: none;">
-            <div style="aspect-ratio: 16/10; overflow: hidden; background: var(--bg-light);">
-              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80" alt="Barber styling hair with precision" loading="lazy" width="900" height="563" style="width: 100%; height: 100%; object-fit: cover; transition: transform 500ms ease-out;">
+          <a href="services.html#hair" class="promo-card">
+            <div class="promo-card__img">
+              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80" alt="Barber styling hair with precision" loading="lazy" width="900" height="563">
             </div>
-            <div style="padding: var(--space-md);">
-              <span class="eyebrow" style="margin-bottom: 0.4rem;">Category One</span>
-              <h3 style="font-family: var(--f-heading); font-size: var(--fs-h3); font-weight: 500; color: var(--text); margin-bottom: 0.5rem;">Hair &amp; Styling</h3>
-              <p style="font-size: var(--fs-sm); color: var(--text-muted);">Classic cuts, fades, crops, texture work and blow drying — performed with precision and adapted to the individual.</p>
+            <div class="promo-card__body">
+              <span class="eyebrow">Category One</span>
+              <p class="promo-card__title">Hair &amp; Styling</p>
+              <p class="promo-card__desc">Classic cuts, fades, crops, texture work and blow drying — performed with precision and adapted to the individual.</p>
             </div>
           </a>
-          <a href="services.html#beard" class="card" style="display: block; overflow: hidden; text-decoration: none;">
-            <div style="aspect-ratio: 16/10; overflow: hidden; background: var(--bg-light);">
-              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80" alt="Barber working on beard shaping and grooming" loading="lazy" width="900" height="563" style="width: 100%; height: 100%; object-fit: cover; transition: transform 500ms ease-out;">
+          <a href="services.html#beard" class="promo-card">
+            <div class="promo-card__img">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80" alt="Barber working on beard shaping and grooming" loading="lazy" width="900" height="563">
             </div>
-            <div style="padding: var(--space-md);">
-              <span class="eyebrow" style="margin-bottom: 0.4rem;">Category Two</span>
-              <h3 style="font-family: var(--f-heading); font-size: var(--fs-h3); font-weight: 500; color: var(--text); margin-bottom: 0.5rem;">Beard &amp; Face</h3>
-              <p style="font-size: var(--fs-sm); color: var(--text-muted);">Beard trims, hot towel shaves, facial grooming — every service approached as a ritual, not a routine.</p>
+            <div class="promo-card__body">
+              <span class="eyebrow">Category Two</span>
+              <p class="promo-card__title">Beard &amp; Face</p>
+              <p class="promo-card__desc">Beard trims, hot towel shaves, facial grooming — every service approached as a ritual, not a routine.</p>
             </div>
           </a>
         </div>
-        <div style="text-align: center; margin-top: var(--space-lg);">
+        <div class="section-cta">
           <a href="services.html" class="btn btn--outline">See Full Service Menu</a>
         </div>
       </div>
@@ -156,8 +153,8 @@
             <span class="eyebrow">Creative Studio</span>
             <h2 class="section-title" id="studio-teaser-title">A space built for <em>serious</em> work</h2>
             <p class="section-lead">The studio at Barber Show is more than an empty room. It is a considered creative environment — equipped, distinctive, and ready.</p>
-            <p style="color: var(--text-muted); margin-bottom: var(--space-md); font-size: var(--fs-sm); line-height: 1.75;">Photographers, filmmakers, content creators and brands rent it by the hour, half-day, or full day. Natural light, backdrops, professional equipment and character that most studios cannot manufacture.</p>
-            <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+            <p>Photographers, filmmakers, content creators and brands rent it by the hour, half-day, or full day. Natural light, backdrops, professional equipment and character that most studios cannot manufacture.</p>
+            <div class="btn-group">
               <a href="coworking.html" class="btn btn--primary">Explore the Studio</a>
               <a href="contact.html" class="btn btn--outline">Make an Enquiry</a>
             </div>
@@ -226,7 +223,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Craft</span>
-              <h3 class="news-card__title"><a href="news-article.html" style="color: inherit;">On the Art of the Fade</a></h3>
+              <h3 class="news-card__title"><a href="news-article.html">On the Art of the Fade</a></h3>
               <p class="news-card__excerpt">A fade is not a template. It is a response to an individual — to their hairline, their skull shape, the way their hair grows. Every good fade begins with observation.</p>
               <span class="news-card__date">May 12, 2026</span>
               <a href="news-article.html" class="news-card__link">Read Article →</a>
@@ -238,7 +235,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Culture</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Barbershop as a Third Place</a></h3>
+              <h3 class="news-card__title"><a href="news.html">The Barbershop as a Third Place</a></h3>
               <p class="news-card__excerpt">Between home and work, there is a third kind of space — one where the rhythm is different and the conversation earns its depth.</p>
               <span class="news-card__date">April 28, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -250,14 +247,14 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Studio</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Why Location Shapes the Work</a></h3>
+              <h3 class="news-card__title"><a href="news.html">Why Location Shapes the Work</a></h3>
               <p class="news-card__excerpt">The space a photographer chooses does not simply frame the shot — it enters it. There is no neutral environment, only choices that either serve the image or compete with it.</p>
               <span class="news-card__date">April 10, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
         </div>
-        <div style="text-align: center; margin-top: var(--space-lg);">
+        <div class="section-cta">
           <a href="news.html" class="btn btn--outline">Read All Articles</a>
         </div>
       </div>
@@ -266,10 +263,10 @@
     <!-- ── FINAL CTA ── -->
     <section class="cta-band" aria-labelledby="cta-title">
       <div class="container">
-        <span class="eyebrow" style="text-align: center; display: block;">Ready when you are</span>
+        <span class="eyebrow">Ready when you are</span>
         <h2 class="section-title" id="cta-title">Book your next <em>appointment</em></h2>
         <p class="section-lead">Appointments through Treatwell. Walk-ins welcome when space allows.</p>
-        <div class="hero-actions" style="justify-content: center;">
+        <div class="hero-actions">
           <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book on Treatwell</a>
           <a href="https://wa.me/617746049" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
         </div>
@@ -278,7 +275,6 @@
 
   </main>
 
-  <!-- ── FOOTER ── -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">

@@ -543,7 +543,7 @@ body {
 ───────────────────────────────────────── */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: var(--space-md);
 }
 
@@ -597,7 +597,7 @@ body {
 ───────────────────────────────────────── */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: var(--space-md);
 }
 
@@ -636,7 +636,7 @@ body {
 ───────────────────────────────────────── */
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-md);
 }
 
@@ -768,7 +768,7 @@ body {
 ───────────────────────────────────────── */
 .services-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1px;
   background: var(--bg-rule);
   border: 1px solid var(--bg-rule);
@@ -812,7 +812,7 @@ body {
 ───────────────────────────────────────── */
 .value-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: var(--space-md);
 }
 
@@ -875,7 +875,7 @@ body {
 ───────────────────────────────────────── */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: var(--space-md);
 }
 
@@ -1055,7 +1055,7 @@ body {
 ───────────────────────────────────────── */
 .included-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-md);
 }
@@ -1387,32 +1387,318 @@ body {
 .cta-band .hero-actions { justify-content: center; }
 
 /* ─────────────────────────────────────────
+   SKIP LINK
+───────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 200;
+  transition: top 200ms;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ─────────────────────────────────────────
+   PAGE HEADER (non-hero pages: news, contact)
+───────────────────────────────────────── */
+.page-header {
+  padding-top: clamp(6rem, 12vw, 9rem);
+  padding-bottom: var(--space-xl);
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--bg-rule);
+}
+
+.page-header .section-title {
+  font-size: var(--fs-h1);
+}
+
+/* ─────────────────────────────────────────
+   FEATURE BOXES
+───────────────────────────────────────── */
+.feature-box {
+  background: var(--bg);
+  padding: var(--space-md);
+  border-top: 2px solid var(--orange);
+}
+
+.feature-box h3 {
+  font-family: var(--f-display);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.feature-box p {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.feature-box--card {
+  padding: var(--space-md);
+  background: var(--bg-card);
+  border-left: 3px solid var(--bg-rule);
+}
+
+.feature-box--card h3 {
+  font-family: var(--f-heading);
+  font-size: var(--fs-h4);
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.feature-box--card p {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: var(--space-sm);
+}
+
+/* ─────────────────────────────────────────
+   PROMO CARD (homepage services preview)
+───────────────────────────────────────── */
+.promo-card {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  background: var(--bg-card);
+  border-top: 2px solid var(--bg-rule);
+  transition: border-color var(--transition);
+}
+
+.promo-card:hover { border-color: var(--orange); }
+
+.promo-card__img {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--bg-light);
+}
+
+.promo-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease-out;
+}
+
+.promo-card:hover .promo-card__img img { transform: scale(1.03); }
+
+.promo-card__body {
+  padding: var(--space-md);
+}
+
+.promo-card__body .eyebrow { margin-bottom: 0.4rem; }
+
+.promo-card__title {
+  font-family: var(--f-heading);
+  font-size: var(--fs-h3);
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.promo-card__desc {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+/* ─────────────────────────────────────────
+   BUTTON GROUP
+───────────────────────────────────────── */
+.btn-group {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.btn-group--col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ─────────────────────────────────────────
+   SPLIT CONTENT — plain paragraphs
+───────────────────────────────────────── */
+.split__content p:not([class]) {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* ─────────────────────────────────────────
+   NEWS CARD TITLE LINK
+───────────────────────────────────────── */
+.news-card__title a { color: inherit; }
+
+/* ─────────────────────────────────────────
+   SECTION CTA (centred action row)
+───────────────────────────────────────── */
+.section-cta {
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+/* ─────────────────────────────────────────
+   CTA BAND — eyebrow block
+───────────────────────────────────────── */
+.cta-band .eyebrow { display: block; }
+
+/* ─────────────────────────────────────────
+   ARTICLES LISTING HEADER
+───────────────────────────────────────── */
+.articles-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.articles-header .section-title { margin-bottom: 0; }
+
+/* ─────────────────────────────────────────
+   NEWS JS ELEMENTS
+───────────────────────────────────────── */
+.js-count {
+  font-family: var(--f-display);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.15em;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+}
+
+.js-no-results {
+  display: none;
+  text-align: center;
+  color: var(--text-subtle);
+  font-size: var(--fs-sm);
+  padding-block: var(--space-xl);
+}
+
+.js-load-more { min-width: 200px; }
+
+.load-more-wrap {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+/* ─────────────────────────────────────────
+   SIDEBAR BOXES (article page)
+───────────────────────────────────────── */
+.sidebar-box {
+  background: var(--bg-card);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.sidebar-box--accent { border-top: 2px solid var(--orange); }
+.sidebar-box--rule   { border-top: 2px solid var(--bg-rule); }
+
+.sidebar-box__label {
+  font-family: var(--f-display);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-box__name {
+  font-family: var(--f-heading);
+  font-size: var(--fs-h4);
+  color: var(--accent);
+}
+
+.sidebar-box__sub {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+.sidebar-box__desc {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+}
+
+.sidebar-box .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ─────────────────────────────────────────
+   ARTICLE RELATED SECTION
+───────────────────────────────────────── */
+.article-related {
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--bg-rule);
+  margin-top: var(--space-xl);
+}
+
+/* ─────────────────────────────────────────
+   MAP SECTION
+───────────────────────────────────────── */
+.map-section {
+  padding-block: var(--section-pad);
+}
+
+/* ─────────────────────────────────────────
+   FOOTNOTE
+───────────────────────────────────────── */
+.footnote {
+  font-size: var(--fs-xs);
+  color: var(--text-subtle);
+  margin-top: var(--space-sm);
+}
+
+.footnote--center {
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+/* ─────────────────────────────────────────
+   HOURS TABLE — closed day
+───────────────────────────────────────── */
+.hours-table__closed { color: var(--text-subtle); }
+
+/* ─────────────────────────────────────────
+   CONTACT DETAIL GROUP spacing
+───────────────────────────────────────── */
+.contact-detail-group { margin-bottom: var(--space-lg); }
+
+/* ─────────────────────────────────────────
+   NARROW CONTAINER VARIANT
+───────────────────────────────────────── */
+.container--narrow {
+  max-width: 780px;
+}
+
+/* ─────────────────────────────────────────
    RESPONSIVE
 ───────────────────────────────────────── */
-/* Utility grids used in place of unresponsive inline styles */
+/* Utility grids — fluid, no breakpoints needed */
 .grid-3col {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: var(--space-md);
 }
 
 .grid-2col {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--space-md);
 }
 
 @media (max-width: 960px) {
-  .value-grid { grid-template-columns: repeat(2, 1fr); }
-  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
-  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
-  .news-grid { grid-template-columns: repeat(2, 1fr); }
-  .services-list { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: span 2; }
-  .included-grid { grid-template-columns: repeat(2, 1fr); }
-  .grid-3col { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1437,17 +1723,9 @@ body {
 }
 
 @media (max-width: 600px) {
-  .value-grid { grid-template-columns: 1fr; }
-  .team-grid { grid-template-columns: 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .news-grid { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; }
-  .included-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto; }
   .availability-grid { grid-template-columns: repeat(3, 1fr); }
-  .grid-3col { grid-template-columns: 1fr; }
-  .grid-2col { grid-template-columns: 1fr; }
 
   .page-hero { min-height: 100svh; }
   .hero-title { font-size: clamp(2.25rem, 10vw, 4rem); }

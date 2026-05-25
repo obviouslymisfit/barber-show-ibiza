@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+  <a href="#main" class="btn btn--outline skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
     <div class="container">
@@ -46,10 +46,10 @@
   <main id="main">
 
     <!-- ── PAGE HEADER ── -->
-    <section style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: var(--space-xl); background: var(--bg-card); border-bottom: 1px solid var(--bg-rule);">
+    <section class="page-header">
       <div class="container">
         <span class="eyebrow">Contact</span>
-        <h1 class="section-title" style="font-size: var(--fs-h1);">Get in <em>touch</em></h1>
+        <h1 class="section-title">Get in <em>touch</em></h1>
         <p class="section-lead">Everything you need to book, enquire, or find us. Two distinct services, two clear paths.</p>
       </div>
     </section>
@@ -64,7 +64,7 @@
             <span class="contact-path__label">Barbershop</span>
             <h3 class="contact-path__title">Book a haircut or grooming service</h3>
             <p class="contact-path__desc">Appointments through Treatwell — select your service, choose your barber, pick a time. Walk-ins are welcome when the chair is free, but booking guarantees your slot.</p>
-            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="btn-group--col">
               <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book on Treatwell</a>
               <a href="https://wa.me/617746049" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
               <a href="tel:617746049" class="btn btn--outline">Call 617 746 049</a>
@@ -75,7 +75,7 @@
             <span class="contact-path__label">Creative Studio</span>
             <h3 class="contact-path__title">Enquire about studio hire</h3>
             <p class="contact-path__desc">Studio bookings are arranged directly. Message us on WhatsApp with your preferred date, the type of shoot, and the duration — we will confirm availability and pricing the same day.</p>
-            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="btn-group--col">
               <a href="https://wa.me/617746049" class="btn btn--accent" target="_blank" rel="noopener noreferrer">Enquire via WhatsApp</a>
               <a href="coworking.html" class="btn btn--outline">View Studio Details</a>
             </div>
@@ -94,7 +94,7 @@
         </div>
         <div class="contact-details-grid">
           <div>
-            <div class="contact-detail-group" style="margin-bottom: var(--space-lg);">
+            <div class="contact-detail-group">
               <h3>Location &amp; Contact</h3>
               <div class="contact-detail-item">
                 <span>Address</span>
@@ -119,37 +119,16 @@
               <h3>Opening Hours</h3>
               <table class="hours-table" aria-label="Barbershop opening hours">
                 <tbody>
-                  <tr>
-                    <td>Monday</td>
-                    <td>10:00 – 20:00</td>
-                  </tr>
-                  <tr>
-                    <td>Tuesday</td>
-                    <td>10:00 – 20:00</td>
-                  </tr>
-                  <tr>
-                    <td>Wednesday</td>
-                    <td>10:00 – 20:00</td>
-                  </tr>
-                  <tr>
-                    <td>Thursday</td>
-                    <td>10:00 – 20:00</td>
-                  </tr>
-                  <tr>
-                    <td>Friday</td>
-                    <td>10:00 – 20:00</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>09:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Sunday</td>
-                    <td style="color: var(--text-subtle);">Closed</td>
-                  </tr>
+                  <tr><td>Monday</td><td>10:00 – 20:00</td></tr>
+                  <tr><td>Tuesday</td><td>10:00 – 20:00</td></tr>
+                  <tr><td>Wednesday</td><td>10:00 – 20:00</td></tr>
+                  <tr><td>Thursday</td><td>10:00 – 20:00</td></tr>
+                  <tr><td>Friday</td><td>10:00 – 20:00</td></tr>
+                  <tr><td>Saturday</td><td>09:00 – 18:00</td></tr>
+                  <tr><td>Sunday</td><td class="hours-table__closed">Closed</td></tr>
                 </tbody>
               </table>
-              <p style="font-size: var(--fs-xs); color: var(--text-subtle); margin-top: var(--space-sm);">Hours may vary during public holidays and August. Confirm by phone or WhatsApp if in doubt.</p>
+              <p class="footnote">Hours may vary during public holidays and August. Confirm by phone or WhatsApp if in doubt.</p>
             </div>
           </div>
         </div>
@@ -157,9 +136,9 @@
     </section>
 
     <!-- ── MAP ── -->
-    <section aria-labelledby="map-title">
-      <div class="container" style="padding-bottom: var(--section-pad);">
-        <div class="section-header" style="padding-top: var(--section-pad);">
+    <section class="map-section" aria-labelledby="map-title">
+      <div class="container">
+        <div class="section-header">
           <span class="eyebrow">Directions</span>
           <h2 class="section-title" id="map-title">Find us in <em>Eivissa</em></h2>
           <p class="section-lead">We are in the centre of Eivissa town, close to the old city. Easy to reach on foot, by taxi, or by bus from the port.</p>
@@ -173,7 +152,7 @@
             allowfullscreen>
           </iframe>
         </div>
-        <p style="font-size: var(--fs-xs); color: var(--text-subtle); margin-top: 0.5rem;">Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</p>
+        <p class="footnote">Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</p>
       </div>
     </section>
 

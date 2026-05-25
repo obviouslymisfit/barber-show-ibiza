@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+  <a href="#main" class="btn btn--outline skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
     <div class="container">
@@ -46,10 +46,10 @@
   <main id="main">
 
     <!-- ── PAGE HEADER ── -->
-    <section style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: var(--space-xl); background: var(--bg-card); border-bottom: 1px solid var(--bg-rule);">
+    <section class="page-header">
       <div class="container">
         <span class="eyebrow">The Journal</span>
-        <h1 class="section-title" style="font-size: var(--fs-h1); max-width: 20ch;">Ideas on grooming, craft, <em>culture</em> and creative life in Ibiza</h1>
+        <h1 class="section-title" style="max-width: 20ch;">Ideas on grooming, craft, <em>culture</em> and creative life in Ibiza</h1>
         <p class="section-lead">Articles that explore what it means to do deliberate work — in the chair, behind the camera, and in the spaces between.</p>
       </div>
     </section>
@@ -58,9 +58,9 @@
     <section class="section" aria-labelledby="articles-title">
       <div class="container">
 
-        <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md);">
-          <h2 class="section-title" id="articles-title" style="margin-bottom: 0;">All <em>articles</em></h2>
-          <p class="js-count" style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.15em; color: var(--text-subtle); text-transform: uppercase;"></p>
+        <div class="articles-header">
+          <h2 class="section-title" id="articles-title">All <em>articles</em></h2>
+          <p class="js-count"></p>
         </div>
 
         <!-- Category filters -->
@@ -82,7 +82,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Craft</span>
-              <h3 class="news-card__title"><a href="news-article.html" style="color: inherit;">On the Art of the Fade</a></h3>
+              <h3 class="news-card__title"><a href="news-article.html">On the Art of the Fade</a></h3>
               <p class="news-card__excerpt">A fade is not a template. It is a response to an individual — to their hairline, their skull shape, the way their hair grows.</p>
               <span class="news-card__date">May 12, 2026</span>
               <a href="news-article.html" class="news-card__link">Read Article →</a>
@@ -95,7 +95,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Culture</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Barbershop as a Third Place</a></h3>
+              <h3 class="news-card__title"><a href="news.html">The Barbershop as a Third Place</a></h3>
               <p class="news-card__excerpt">Between home and work, there is a third kind of space — one where the rhythm is different and the conversation earns its depth.</p>
               <span class="news-card__date">April 28, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -108,7 +108,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Studio</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Why Location Shapes the Work</a></h3>
+              <h3 class="news-card__title"><a href="news.html">Why Location Shapes the Work</a></h3>
               <p class="news-card__excerpt">The space a photographer chooses does not simply frame the shot — it enters it. There is no neutral environment.</p>
               <span class="news-card__date">April 10, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -121,7 +121,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Ritual</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Morning Shave as a Practice</a></h3>
+              <h3 class="news-card__title"><a href="news.html">The Morning Shave as a Practice</a></h3>
               <p class="news-card__excerpt">There is a difference between a task completed and a ritual observed. The straight razor shave, done well, belongs in the second category.</p>
               <span class="news-card__date">March 22, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -134,7 +134,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Ibiza</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">What Ibiza's Creative Community Keeps Returning For</a></h3>
+              <h3 class="news-card__title"><a href="news.html">What Ibiza's Creative Community Keeps Returning For</a></h3>
               <p class="news-card__excerpt">The ones who keep coming back are usually here for the quality of the light, the pace, and the people who take their work seriously.</p>
               <span class="news-card__date">March 5, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -147,7 +147,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Craft</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Texture, Grain, and the Language of Hair</a></h3>
+              <h3 class="news-card__title"><a href="news.html">Texture, Grain, and the Language of Hair</a></h3>
               <p class="news-card__excerpt">Hair has a direction, a weight, a personality. Understanding those qualities before the scissors move is what separates craft from habit.</p>
               <span class="news-card__date">February 18, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -160,7 +160,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Culture</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">On Dressing for the Climate</a></h3>
+              <h3 class="news-card__title"><a href="news.html">On Dressing for the Climate</a></h3>
               <p class="news-card__excerpt">Ibiza in summer demands a different kind of discipline — lightness without casualness, ease without abandonment of intention.</p>
               <span class="news-card__date">January 30, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -173,7 +173,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Studio</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">What Makes a Good Studio Great</a></h3>
+              <h3 class="news-card__title"><a href="news.html">What Makes a Good Studio Great</a></h3>
               <p class="news-card__excerpt">The difference is rarely equipment. It is the quality of light, the character of the walls, and whether the space works with the image or against it.</p>
               <span class="news-card__date">January 12, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -186,7 +186,7 @@
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Ritual</span>
-              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Consultation: Why It Matters More Than the Cut</a></h3>
+              <h3 class="news-card__title"><a href="news.html">The Consultation: Why It Matters More Than the Cut</a></h3>
               <p class="news-card__excerpt">The two minutes before a barber picks up anything are the most important two minutes of the appointment. Most people do not know this.</p>
               <span class="news-card__date">December 20, 2025</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
@@ -196,12 +196,12 @@
         </div>
 
         <!-- Load More -->
-        <div style="text-align: center; margin-top: var(--space-xl);">
-          <button class="btn btn--outline js-load-more" style="min-width: 200px;">Load More</button>
+        <div class="load-more-wrap">
+          <button class="btn btn--outline js-load-more">Load More</button>
         </div>
 
         <!-- No results message -->
-        <p class="js-no-results" style="display: none; text-align: center; color: var(--text-subtle); font-size: var(--fs-sm); padding-block: var(--space-xl);">No articles in this category yet.</p>
+        <p class="js-no-results">No articles in this category yet.</p>
 
       </div>
     </section>
@@ -306,7 +306,6 @@
       loadMoreBtn.addEventListener('click', () => {
         showing += BATCH;
         render();
-        /* scroll newly revealed first card into view softly */
         const matching = getMatching();
         const next = matching[showing - BATCH];
         if (next) next.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
