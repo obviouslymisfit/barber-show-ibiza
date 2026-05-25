@@ -5,7 +5,13 @@
   const header = document.querySelector('.site-header');
   if (!header) return;
 
+  const hasDarkHero = document.querySelector('.page-hero');
+
   const toggle = () => {
+    if (!hasDarkHero) {
+      header.classList.add('scrolled');
+      return;
+    }
     header.classList.toggle('scrolled', window.scrollY > 40);
   };
 
