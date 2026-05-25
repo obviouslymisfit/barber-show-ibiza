@@ -643,12 +643,23 @@ body {
 .news-card {
   display: flex;
   flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-rule);
+  overflow: hidden;
+  transition: border-color 250ms ease-out, transform 300ms ease-out, box-shadow 300ms ease-out;
+}
+
+.news-card:hover {
+  border-color: var(--orange);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
 }
 
 .news-card__img {
   aspect-ratio: 16/10;
   overflow: hidden;
   background: var(--bg-light);
+  display: block;
 }
 
 .news-card__img img {
@@ -663,10 +674,16 @@ body {
 }
 
 .news-card__body {
-  padding: var(--space-md) 0 var(--space-sm);
+  padding: var(--space-md);
   flex: 1;
   display: flex;
   flex-direction: column;
+  border-top: 2px solid transparent;
+  transition: border-color 250ms ease-out;
+}
+
+.news-card:hover .news-card__body {
+  border-color: var(--orange);
 }
 
 .news-card__category {
@@ -698,10 +715,10 @@ body {
 .news-card__date {
   font-size: var(--fs-xs);
   color: var(--text-subtle);
+  margin-bottom: var(--space-sm);
 }
 
 .news-card__link {
-  margin-top: auto;
   font-family: var(--f-display);
   font-size: var(--fs-xs);
   letter-spacing: 0.15em;
@@ -710,11 +727,46 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  margin-top: var(--space-sm);
+  margin-top: auto;
   transition: color var(--transition);
 }
 
 .news-card__link:hover { color: var(--orange); }
+
+/* ─────────────────────────────────────────
+   CATEGORY FILTERS
+───────────────────────────────────────── */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+.filter-btn {
+  font-family: var(--f-display);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.45em 1em;
+  border: 1px solid var(--bg-rule);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  background: transparent;
+  min-height: 36px;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filter-btn.is-active {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--text);
+}
 
 /* ─────────────────────────────────────────
    SERVICE CARD
@@ -1186,7 +1238,8 @@ body {
    ARTICLE PAGE
 ───────────────────────────────────────── */
 .article-hero {
-  aspect-ratio: 21/9;
+  height: 50vh;
+  min-height: 280px;
   overflow: hidden;
   position: relative;
   background: var(--bg-light);

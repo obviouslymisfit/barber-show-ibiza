@@ -57,88 +57,152 @@
     <!-- ── ARTICLE LISTING ── -->
     <section class="section" aria-labelledby="articles-title">
       <div class="container">
-        <h2 class="section-title" id="articles-title" style="margin-bottom: var(--space-lg);">All <em>articles</em></h2>
-        <div class="news-grid">
 
-          <article class="news-card">
-            <a href="news-article.html" class="news-card__img">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Detail of barber tools and technique" loading="lazy" width="800" height="500">
+        <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md);">
+          <h2 class="section-title" id="articles-title" style="margin-bottom: 0;">All <em>articles</em></h2>
+          <p class="js-count" style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.15em; color: var(--text-subtle); text-transform: uppercase;"></p>
+        </div>
+
+        <!-- Category filters -->
+        <nav class="category-filters" aria-label="Filter articles by category">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="craft">Craft</button>
+          <button class="filter-btn" data-filter="culture">Culture</button>
+          <button class="filter-btn" data-filter="studio">Studio</button>
+          <button class="filter-btn" data-filter="ritual">Ritual</button>
+          <button class="filter-btn" data-filter="ibiza">Ibiza</button>
+        </nav>
+
+        <!-- Article grid — all articles present, JS controls visibility -->
+        <div class="news-grid js-grid" role="list">
+
+          <article class="news-card" data-category="craft" role="listitem">
+            <a href="news-article.html" class="news-card__img" aria-label="Read: On the Art of the Fade">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Close detail of barber tools and technique" loading="lazy" width="800" height="500">
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Craft</span>
               <h3 class="news-card__title"><a href="news-article.html" style="color: inherit;">On the Art of the Fade</a></h3>
-              <p class="news-card__excerpt">A fade is not a template. It is a response to an individual — to their hairline, their skull shape, the way their hair grows. Every good fade begins with observation.</p>
+              <p class="news-card__excerpt">A fade is not a template. It is a response to an individual — to their hairline, their skull shape, the way their hair grows.</p>
               <span class="news-card__date">May 12, 2026</span>
               <a href="news-article.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
 
-          <article class="news-card">
-            <a href="news.html" class="news-card__img">
+          <article class="news-card" data-category="culture" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: The Barbershop as a Third Place">
               <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=800&q=80" alt="Man in thoughtful portrait, natural light" loading="lazy" width="800" height="500">
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Culture</span>
               <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Barbershop as a Third Place</a></h3>
-              <p class="news-card__excerpt">Between home and work, there is a third kind of space — one where the rhythm is different and the conversation earns its depth. The barbershop has always been that space.</p>
+              <p class="news-card__excerpt">Between home and work, there is a third kind of space — one where the rhythm is different and the conversation earns its depth.</p>
               <span class="news-card__date">April 28, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
 
-          <article class="news-card">
-            <a href="news.html" class="news-card__img">
+          <article class="news-card" data-category="studio" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: Why Location Shapes the Work">
               <img src="https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?auto=format&fit=crop&w=800&q=80" alt="Creative professional at work in a distinctive space" loading="lazy" width="800" height="500">
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Studio</span>
               <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Why Location Shapes the Work</a></h3>
-              <p class="news-card__excerpt">The space a photographer chooses does not simply frame the shot — it enters it. There is no neutral environment, only choices that either serve the image or compete with it.</p>
+              <p class="news-card__excerpt">The space a photographer chooses does not simply frame the shot — it enters it. There is no neutral environment.</p>
               <span class="news-card__date">April 10, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
 
-          <article class="news-card">
-            <a href="news.html" class="news-card__img">
+          <article class="news-card" data-category="ritual" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: The Morning Shave as a Practice">
               <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Barber working with focus and care" loading="lazy" width="800" height="500">
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Ritual</span>
               <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Morning Shave as a Practice</a></h3>
-              <p class="news-card__excerpt">There is a difference between a task completed and a ritual observed. The straight razor shave, done well, belongs firmly in the second category.</p>
+              <p class="news-card__excerpt">There is a difference between a task completed and a ritual observed. The straight razor shave, done well, belongs in the second category.</p>
               <span class="news-card__date">March 22, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
 
-          <article class="news-card">
-            <a href="news.html" class="news-card__img">
+          <article class="news-card" data-category="ibiza" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: What Ibiza's Creative Community Keeps Returning For">
               <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Ibiza coastline and Mediterranean light" loading="lazy" width="800" height="500">
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Ibiza</span>
               <h3 class="news-card__title"><a href="news.html" style="color: inherit;">What Ibiza's Creative Community Keeps Returning For</a></h3>
-              <p class="news-card__excerpt">The island draws people for many reasons. The ones who keep coming back are usually here for something less obvious — for the quality of the light, the pace, and the people who take their work seriously.</p>
+              <p class="news-card__excerpt">The ones who keep coming back are usually here for the quality of the light, the pace, and the people who take their work seriously.</p>
               <span class="news-card__date">March 5, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
 
-          <article class="news-card">
-            <a href="news.html" class="news-card__img">
+          <article class="news-card" data-category="craft" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: Texture, Grain, and the Language of Hair">
               <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Barber at work, close detail of precision cutting" loading="lazy" width="800" height="500">
             </a>
             <div class="news-card__body">
               <span class="news-card__category">Craft</span>
               <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Texture, Grain, and the Language of Hair</a></h3>
-              <p class="news-card__excerpt">Hair has a direction, a weight, a personality. Understanding those qualities before the scissors move is the difference between a cut that lasts and one that looks right only on the day.</p>
+              <p class="news-card__excerpt">Hair has a direction, a weight, a personality. Understanding those qualities before the scissors move is what separates craft from habit.</p>
               <span class="news-card__date">February 18, 2026</span>
               <a href="news.html" class="news-card__link">Read Article →</a>
             </div>
           </article>
 
+          <article class="news-card" data-category="culture" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: On Dressing for the Climate">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Considered clothing and style details" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Culture</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">On Dressing for the Climate</a></h3>
+              <p class="news-card__excerpt">Ibiza in summer demands a different kind of discipline — lightness without casualness, ease without abandonment of intention.</p>
+              <span class="news-card__date">January 30, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="studio" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: What Makes a Good Studio Great">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Creative studio space with clean light and character" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Studio</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">What Makes a Good Studio Great</a></h3>
+              <p class="news-card__excerpt">The difference is rarely equipment. It is the quality of light, the character of the walls, and whether the space works with the image or against it.</p>
+              <span class="news-card__date">January 12, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="ritual" role="listitem">
+            <a href="news.html" class="news-card__img" aria-label="Read: The Consultation: Why It Matters More Than the Cut">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Barber consulting with a client, warm interior light" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Ritual</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Consultation: Why It Matters More Than the Cut</a></h3>
+              <p class="news-card__excerpt">The two minutes before a barber picks up anything are the most important two minutes of the appointment. Most people do not know this.</p>
+              <span class="news-card__date">December 20, 2025</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
         </div>
+
+        <!-- Load More -->
+        <div style="text-align: center; margin-top: var(--space-xl);">
+          <button class="btn btn--outline js-load-more" style="min-width: 200px;">Load More</button>
+        </div>
+
+        <!-- No results message -->
+        <p class="js-no-results" style="display: none; text-align: center; color: var(--text-subtle); font-size: var(--fs-sm); padding-block: var(--space-xl);">No articles in this category yet.</p>
+
       </div>
     </section>
 
@@ -191,5 +255,65 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script>
+    (function () {
+      const BATCH = 6;
+      const grid = document.querySelector('.js-grid');
+      const loadMoreBtn = document.querySelector('.js-load-more');
+      const noResults = document.querySelector('.js-no-results');
+      const countEl = document.querySelector('.js-count');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const allCards = [...grid.querySelectorAll('.news-card')];
+
+      let activeFilter = 'all';
+      let showing = BATCH;
+
+      function getMatching() {
+        return activeFilter === 'all'
+          ? allCards
+          : allCards.filter(c => c.dataset.category === activeFilter);
+      }
+
+      function render() {
+        const matching = getMatching();
+
+        allCards.forEach(c => { c.style.display = 'none'; c.removeAttribute('aria-hidden'); });
+
+        const visible = matching.slice(0, showing);
+        visible.forEach(c => { c.style.display = ''; });
+
+        const hasMore = matching.length > showing;
+        loadMoreBtn.style.display = hasMore ? '' : 'none';
+        noResults.style.display = matching.length === 0 ? '' : 'none';
+
+        if (countEl) {
+          const total = matching.length;
+          const shown = Math.min(showing, total);
+          countEl.textContent = total > 0 ? shown + ' of ' + total : '';
+        }
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeFilter = btn.dataset.filter;
+          showing = BATCH;
+          filterBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          render();
+        });
+      });
+
+      loadMoreBtn.addEventListener('click', () => {
+        showing += BATCH;
+        render();
+        /* scroll newly revealed first card into view softly */
+        const matching = getMatching();
+        const next = matching[showing - BATCH];
+        if (next) next.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+
+      render();
+    })();
+  </script>
 </body>
 </html>
