@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Barber Show Ibiza</title>
+  <meta name="description" content="Hair cutting, fades, beard grooming and hot towel shaves. Full service menu and pricing for Barber Show Ibiza.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,300&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+        <span class="logo__main">Barber Show</span>
+        <span class="logo__sub">Ibiza</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="services.html" class="site-nav__link" aria-current="page">Services</a>
+        <a href="coworking.html" class="site-nav__link">Coworking</a>
+        <a href="news.html" class="site-nav__link">News</a>
+        <a href="about.html" class="site-nav__link">About</a>
+        <a href="contact.html" class="site-nav__link">Contact</a>
+        <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-book" target="_blank" rel="noopener noreferrer">Book Now</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="services.html" class="nav-overlay__link">Services</a>
+    <a href="coworking.html" class="nav-overlay__link">Coworking</a>
+    <a href="news.html" class="nav-overlay__link">News</a>
+    <a href="about.html" class="nav-overlay__link">About</a>
+    <a href="contact.html" class="nav-overlay__link">Contact</a>
+    <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-overlay__book" target="_blank" rel="noopener noreferrer">Book Now</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ── HERO ── -->
+    <section class="page-hero page-hero--short" aria-labelledby="services-hero-title">
+      <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1920&q=80');" role="img" aria-label="Barber at work, close-up of craft and technique"></div>
+      <div class="container">
+        <span class="hero-eyebrow">Services</span>
+        <h1 class="hero-title" id="services-hero-title">Craft, <em>detail,</em> and the art of precision</h1>
+      </div>
+    </section>
+
+    <!-- ── HAIR & STYLING ── -->
+    <section class="section" id="hair" aria-labelledby="hair-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Category One</span>
+          <h2 class="section-title" id="hair-title">Hair &amp; <em>Styling</em></h2>
+          <p class="section-lead">Every cut is adapted to the individual. Structure, growth pattern, and lifestyle all inform the result. We do not cut to a template.</p>
+        </div>
+        <div class="services-list" role="list">
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Classic Cut</p>
+              <p class="service-item__desc">Scissors or clippers. Clean finish, adapted to your structure.</p>
+            </div>
+            <span class="service-item__price">€28</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Skin Fade</p>
+              <p class="service-item__desc">Precise gradation from skin to length. High, mid, or low — your call.</p>
+            </div>
+            <span class="service-item__price">€32</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Crop &amp; Texture</p>
+              <p class="service-item__desc">Modern textured styling for naturally thick or curly hair.</p>
+            </div>
+            <span class="service-item__price">€30</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Long Hair Styling</p>
+              <p class="service-item__desc">Shape, weight removal, and finish for longer lengths. Wash included.</p>
+            </div>
+            <span class="service-item__price">€38</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Wash &amp; Blow Dry</p>
+              <p class="service-item__desc">Hair wash with scalp massage and professional finish. No cut.</p>
+            </div>
+            <span class="service-item__price">€20</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Head Shave</p>
+              <p class="service-item__desc">Close clipper shave followed by hot towel and finish.</p>
+            </div>
+            <span class="service-item__price">€25</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BEARD & FACE ── -->
+    <section class="section section--alt" id="beard" aria-labelledby="beard-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Category Two</span>
+          <h2 class="section-title" id="beard-title">Beard &amp; <em>Face</em></h2>
+          <p class="section-lead">Approached as a ritual, not a routine. Beard grooming at this level is about shape, balance, and care — not speed.</p>
+        </div>
+        <div class="services-list" role="list">
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Beard Trim &amp; Shape</p>
+              <p class="service-item__desc">Precise trimming and lining for any beard length or style.</p>
+            </div>
+            <span class="service-item__price">€18</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Hot Towel Shave</p>
+              <p class="service-item__desc">Straight razor shave with hot towel preparation and skin finish.</p>
+            </div>
+            <span class="service-item__price">€28</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Full Beard Service</p>
+              <p class="service-item__desc">Wash, trim, shape, hot towel treatment and conditioning finish.</p>
+            </div>
+            <span class="service-item__price">€35</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Beard Colouring</p>
+              <p class="service-item__desc">Natural-tone colouring to restore depth or cover grey. Consultation included.</p>
+            </div>
+            <span class="service-item__price">€25</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Express Facial</p>
+              <p class="service-item__desc">Deep cleanse, exfoliation and hydration mask. Skin reset in 30 minutes.</p>
+            </div>
+            <span class="service-item__price">€30</span>
+          </div>
+          <div class="service-item" role="listitem">
+            <div>
+              <p class="service-item__name">Eyebrow Grooming</p>
+              <p class="service-item__desc">Threading or waxing with natural shape restoration and brow finish.</p>
+            </div>
+            <span class="service-item__price">€15</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── OTHER SERVICES ── -->
+    <section class="section" aria-labelledby="other-services-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Additional</span>
+          <h2 class="section-title" id="other-services-title">Other <em>services</em></h2>
+          <p class="section-lead">Bespoke, seasonal, or supplementary services that fall outside the main categories. These require a direct conversation before booking.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md);">
+          <div style="padding: var(--space-md); background: var(--bg-card); border-left: 3px solid var(--bg-rule);">
+            <h3 style="font-family: var(--f-heading); font-size: var(--fs-h4); font-weight: 500; color: var(--text); margin-bottom: 0.5rem;">Groom Packages</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65; margin-bottom: var(--space-sm);">Pre-wedding or event preparation packages combining cut, beard and skin services. Designed around a specific date and schedule.</p>
+            <a href="https://wa.me/617746049" class="btn btn--outline" style="font-size: var(--fs-xs);" target="_blank" rel="noopener noreferrer">Enquire via WhatsApp</a>
+          </div>
+          <div style="padding: var(--space-md); background: var(--bg-card); border-left: 3px solid var(--bg-rule);">
+            <h3 style="font-family: var(--f-heading); font-size: var(--fs-h4); font-weight: 500; color: var(--text); margin-bottom: 0.5rem;">Private Appointments</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65; margin-bottom: var(--space-sm);">Before-hours or after-hours bookings for clients who require privacy or have scheduling constraints. By arrangement only.</p>
+            <a href="https://wa.me/617746049" class="btn btn--outline" style="font-size: var(--fs-xs);" target="_blank" rel="noopener noreferrer">Enquire via WhatsApp</a>
+          </div>
+          <div style="padding: var(--space-md); background: var(--bg-card); border-left: 3px solid var(--bg-rule);">
+            <h3 style="font-family: var(--f-heading); font-size: var(--fs-h4); font-weight: 500; color: var(--text); margin-bottom: 0.5rem;">Seasonal Treatments</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65; margin-bottom: var(--space-sm);">Rotating treatments tied to season and climate — post-summer hair recovery, scalp intensive, and similar. Ask what is currently available.</p>
+            <a href="tel:617746049" class="btn btn--outline" style="font-size: var(--fs-xs);">Call to Enquire</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STUDIO CROSS-SELL ── -->
+    <section class="section section--alt" aria-labelledby="services-studio-title">
+      <div class="container">
+        <div class="split">
+          <div class="split__img">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Creative studio space with clean lines and professional setup" loading="lazy" width="900" height="1125">
+          </div>
+          <div class="split__content">
+            <span class="eyebrow">Also Available</span>
+            <h2 class="section-title" id="services-studio-title">Studio rental for creative <em>professionals</em></h2>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">Barber Show is more than a barbershop. Alongside the chair, there is a fully equipped creative studio available for hire by the hour, half-day, or full day.</p>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: var(--space-md);">Photographers, videographers, brands and content creators use it for shoots that require character, controlled light, and a distinctive environment. Not a generic white box.</p>
+            <a href="coworking.html" class="btn btn--primary">Explore the Studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TEAM ── -->
+    <section class="section" aria-labelledby="services-team-title">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="eyebrow">Your Barber</span>
+          <h2 class="section-title" id="services-team-title">Know who you're <em>booking</em></h2>
+          <p class="section-lead">Three barbers. Distinct strengths. The same standard of finish. Choosing the right chair is part of the experience.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card card">
+            <div class="team-card__img">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Marc, Senior Barber" loading="lazy" width="600" height="800">
+            </div>
+            <div class="team-card__body">
+              <span class="team-card__role">Founder · Senior Barber</span>
+              <h3 class="team-card__name">Marc</h3>
+              <p class="team-card__bio">Fourteen years of experience. Specialist in classic techniques, scissor work, and precision finishing. Book Marc for a considered classic or a refined shape-up.</p>
+            </div>
+          </article>
+          <article class="team-card card">
+            <div class="team-card__img">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Alejandro, Master Barber" loading="lazy" width="600" height="800">
+            </div>
+            <div class="team-card__body">
+              <span class="team-card__role">Master Barber</span>
+              <h3 class="team-card__name">Alejandro</h3>
+              <p class="team-card__bio">Skin fades, beard sculpting, and structural precision. If you know what you want and want it done exactly right, Alejandro is the correct choice.</p>
+            </div>
+          </article>
+          <article class="team-card card">
+            <div class="team-card__img">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Carlos, Barber and Style Consultant" loading="lazy" width="600" height="800">
+            </div>
+            <div class="team-card__body">
+              <span class="team-card__role">Barber · Style Consultant</span>
+              <h3 class="team-card__name">Carlos</h3>
+              <p class="team-card__bio">Texture, proportion, and modern style. If you want to change something and want to understand why it will work, start with Carlos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section class="section section--alt" aria-labelledby="services-testimonials-title">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="eyebrow">Client Voices</span>
+          <h2 class="section-title" id="services-testimonials-title">From people who've <em>been in the chair</em></h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">"The fade was exactly what I described — and then a bit better. I did not expect that level of attention to the hairline detail."</p>
+            <p class="testimonial-card__name">Tom H.</p>
+            <p class="testimonial-card__service">Skin Fade</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">"I came in with a beard that had lost its shape after weeks of travel. Carlos fixed it in one session and talked me through the structure the whole time."</p>
+            <p class="testimonial-card__name">Rafa M.</p>
+            <p class="testimonial-card__service">Full Beard Service</p>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-card__quote">"Straight razor shave. Hot towel. No rushing, no small talk unless you start it. Exactly what a proper shave should feel like."</p>
+            <p class="testimonial-card__name">Oliver P.</p>
+            <p class="testimonial-card__service">Hot Towel Shave</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-band" aria-labelledby="services-cta-title">
+      <div class="container">
+        <span class="eyebrow" style="text-align: center; display: block;">Book your appointment</span>
+        <h2 class="section-title" id="services-cta-title">Ready to <em>begin</em></h2>
+        <p class="section-lead">Appointments available through Treatwell. Walk-ins welcome when the chair is free.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book on Treatwell</a>
+          <a href="https://wa.me/617746049" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+            <span class="logo__main">Barber Show</span>
+            <span class="logo__sub">Ibiza</span>
+          </a>
+          <p>Premium barbershop and creative studio in the heart of Eivissa. Deliberate work. Considered environment.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <div class="footer-contact-item">
+            <span>Address</span>
+            <span>Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>Phone</span>
+            <a href="tel:617746049">617 746 049</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/617746049" target="_blank" rel="noopener noreferrer">Message us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Barber Show Ibiza. All rights reserved.</p>
+        <p>Carrer de Josep Riquer Llobet, 7, Local 5, Eivissa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

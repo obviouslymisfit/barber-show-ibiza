@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Barber Show Ibiza</title>
+  <meta name="description" content="Find Barber Show Ibiza in Eivissa. Book a haircut, enquire about the studio, or get in touch by phone, WhatsApp or in person.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,300&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+        <span class="logo__main">Barber Show</span>
+        <span class="logo__sub">Ibiza</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="services.html" class="site-nav__link">Services</a>
+        <a href="coworking.html" class="site-nav__link">Coworking</a>
+        <a href="news.html" class="site-nav__link">News</a>
+        <a href="about.html" class="site-nav__link">About</a>
+        <a href="contact.html" class="site-nav__link" aria-current="page">Contact</a>
+        <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-book" target="_blank" rel="noopener noreferrer">Book Now</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="services.html" class="nav-overlay__link">Services</a>
+    <a href="coworking.html" class="nav-overlay__link">Coworking</a>
+    <a href="news.html" class="nav-overlay__link">News</a>
+    <a href="about.html" class="nav-overlay__link">About</a>
+    <a href="contact.html" class="nav-overlay__link">Contact</a>
+    <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-overlay__book" target="_blank" rel="noopener noreferrer">Book Now</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ── PAGE HEADER ── -->
+    <section style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: var(--space-xl); background: var(--bg-card); border-bottom: 1px solid var(--bg-rule);">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 class="section-title" style="font-size: var(--fs-h1);">Get in <em>touch</em></h1>
+        <p class="section-lead">Everything you need to book, enquire, or find us. Two distinct services, two clear paths.</p>
+      </div>
+    </section>
+
+    <!-- ── DUAL PATHWAY ── -->
+    <section class="section" aria-labelledby="pathways-title">
+      <div class="container">
+        <h2 class="section-title" id="pathways-title" style="margin-bottom: var(--space-lg);">What brings you <em>here</em></h2>
+        <div class="contact-paths">
+
+          <div class="contact-path contact-path--barbershop">
+            <span class="contact-path__label">Barbershop</span>
+            <h3 class="contact-path__title">Book a haircut or grooming service</h3>
+            <p class="contact-path__desc">Appointments through Treatwell — select your service, choose your barber, pick a time. Walk-ins are welcome when the chair is free, but booking guarantees your slot.</p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book on Treatwell</a>
+              <a href="https://wa.me/617746049" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+              <a href="tel:617746049" class="btn btn--outline">Call 617 746 049</a>
+            </div>
+          </div>
+
+          <div class="contact-path contact-path--studio">
+            <span class="contact-path__label">Creative Studio</span>
+            <h3 class="contact-path__title">Enquire about studio hire</h3>
+            <p class="contact-path__desc">Studio bookings are arranged directly. Message us on WhatsApp with your preferred date, the type of shoot, and the duration — we will confirm availability and pricing the same day.</p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <a href="https://wa.me/617746049" class="btn btn--accent" target="_blank" rel="noopener noreferrer">Enquire via WhatsApp</a>
+              <a href="coworking.html" class="btn btn--outline">View Studio Details</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT DETAILS & HOURS ── -->
+    <section class="section section--alt" aria-labelledby="details-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Find Us</span>
+          <h2 class="section-title" id="details-title">Contact <em>details</em></h2>
+        </div>
+        <div class="contact-details-grid">
+          <div>
+            <div class="contact-detail-group" style="margin-bottom: var(--space-lg);">
+              <h3>Location &amp; Contact</h3>
+              <div class="contact-detail-item">
+                <span>Address</span>
+                <p>Carrer de Josep Riquer Llobet, 7, Local 5<br>07800 Eivissa, Illes Balears</p>
+              </div>
+              <div class="contact-detail-item">
+                <span>Phone</span>
+                <a href="tel:617746049">617 746 049</a>
+              </div>
+              <div class="contact-detail-item">
+                <span>WhatsApp</span>
+                <a href="https://wa.me/617746049" target="_blank" rel="noopener noreferrer">+34 617 746 049</a>
+              </div>
+              <div class="contact-detail-item">
+                <span>Booking</span>
+                <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" target="_blank" rel="noopener noreferrer">Treatwell — Book Online</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="contact-detail-group">
+              <h3>Opening Hours</h3>
+              <table class="hours-table" aria-label="Barbershop opening hours">
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>10:00 – 20:00</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>09:00 – 18:00</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td style="color: var(--text-subtle);">Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="font-size: var(--fs-xs); color: var(--text-subtle); margin-top: var(--space-sm);">Hours may vary during public holidays and August. Confirm by phone or WhatsApp if in doubt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MAP ── -->
+    <section aria-labelledby="map-title">
+      <div class="container" style="padding-bottom: var(--section-pad);">
+        <div class="section-header" style="padding-top: var(--section-pad);">
+          <span class="eyebrow">Directions</span>
+          <h2 class="section-title" id="map-title">Find us in <em>Eivissa</em></h2>
+          <p class="section-lead">We are in the centre of Eivissa town, close to the old city. Easy to reach on foot, by taxi, or by bus from the port.</p>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.0597938516!2d1.4375!3d38.908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129942b33f77b8c5%3A0x20b4ff82e3ef0b4b!2sCarrer%20de%20Josep%20Riquer%20Llobet%2C%207%2C%2007800%20Eivissa!5e0!3m2!1sen!2ses!4v1716300000000!5m2!1sen!2ses"
+            title="Barber Show Ibiza location map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p style="font-size: var(--fs-xs); color: var(--text-subtle); margin-top: 0.5rem;">Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+            <span class="logo__main">Barber Show</span>
+            <span class="logo__sub">Ibiza</span>
+          </a>
+          <p>Premium barbershop and creative studio in the heart of Eivissa. Deliberate work. Considered environment.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <div class="footer-contact-item">
+            <span>Address</span>
+            <span>Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>Phone</span>
+            <a href="tel:617746049">617 746 049</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/617746049" target="_blank" rel="noopener noreferrer">Message us</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>Booking</span>
+            <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" target="_blank" rel="noopener noreferrer">Book on Treatwell</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Barber Show Ibiza. All rights reserved.</p>
+        <p>Carrer de Josep Riquer Llobet, 7, Local 5, Eivissa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

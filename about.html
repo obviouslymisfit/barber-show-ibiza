@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Barber Show Ibiza</title>
+  <meta name="description" content="The story behind Barber Show Ibiza. A premium barbershop and creative studio rooted in craft, precision, and the culture of Eivissa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,300&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+        <span class="logo__main">Barber Show</span>
+        <span class="logo__sub">Ibiza</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="services.html" class="site-nav__link">Services</a>
+        <a href="coworking.html" class="site-nav__link">Coworking</a>
+        <a href="news.html" class="site-nav__link">News</a>
+        <a href="about.html" class="site-nav__link" aria-current="page">About</a>
+        <a href="contact.html" class="site-nav__link">Contact</a>
+        <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-book" target="_blank" rel="noopener noreferrer">Book Now</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="services.html" class="nav-overlay__link">Services</a>
+    <a href="coworking.html" class="nav-overlay__link">Coworking</a>
+    <a href="news.html" class="nav-overlay__link">News</a>
+    <a href="about.html" class="nav-overlay__link">About</a>
+    <a href="contact.html" class="nav-overlay__link">Contact</a>
+    <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-overlay__book" target="_blank" rel="noopener noreferrer">Book Now</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ── HERO ── -->
+    <section class="page-hero page-hero--short" aria-labelledby="about-hero-title">
+      <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80');" role="img" aria-label="Barber at work, focused on technique"></div>
+      <div class="container">
+        <span class="hero-eyebrow">About</span>
+        <h1 class="hero-title" id="about-hero-title">The story behind the <em>craft</em></h1>
+      </div>
+    </section>
+
+    <!-- ── BRAND STORY ── -->
+    <section class="section" aria-labelledby="brand-story-title">
+      <div class="container">
+        <div class="split">
+          <div class="split__content">
+            <span class="eyebrow">Brand Story</span>
+            <h2 class="section-title" id="brand-story-title">Ibiza-rooted, <em>internationally</em> fluent</h2>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">Barber Show Ibiza was founded on a single conviction: that a barbershop should be a place where skill is visible and nothing is performed. Not the idea of craft — craft itself. The kind that takes years to develop, cannot be faked, and does not need to announce itself.</p>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">We opened in the centre of Eivissa because this island demands a particular kind of quality — its clientele is global, style-conscious, and experienced. They have sat in chairs across continents. They know when something is good and they know when it is not. We built the shop for them.</p>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: var(--space-md);">Alongside the barbershop, the studio emerged from the same thinking: that creative professionals in Ibiza deserve a space that matches the quality of their work. A location with real character — not a generic white box — where the environment contributes to the image rather than competing with it.</p>
+          </div>
+          <div class="split__img">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80" alt="Interior of Barber Show Ibiza, warm lighting and considered space" loading="lazy" width="900" height="1125">
+          </div>
+        </div>
+
+        <div class="pullquote" style="margin-top: var(--space-xl);">
+          <p>"Style is rarely accidental. It is built from small decisions — the angle of a fade, the balance of volume, the way texture moves with natural growth."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TEAM ── -->
+    <section class="section section--alt" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="eyebrow">The People</span>
+          <h2 class="section-title" id="team-title">The hands behind the <em>work</em></h2>
+          <p class="section-lead">Three barbers with distinct approaches and a shared standard. Getting to know who is behind the chair is part of choosing the right one.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card card">
+            <div class="team-card__img">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Marc, Senior Barber and Founder" loading="lazy" width="600" height="800">
+            </div>
+            <div class="team-card__body">
+              <span class="team-card__role">Senior Barber · Founder</span>
+              <h3 class="team-card__name">Marc</h3>
+              <p class="team-card__bio">Fourteen years behind the chair across Barcelona, London, and Ibiza. Marc built the shop around the values he found missing elsewhere — patience, precision, and no unnecessary conversation when you would rather just sit in the chair.</p>
+            </div>
+          </article>
+          <article class="team-card card">
+            <div class="team-card__img">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Alejandro, Master Barber" loading="lazy" width="600" height="800">
+            </div>
+            <div class="team-card__body">
+              <span class="team-card__role">Master Barber</span>
+              <h3 class="team-card__name">Alejandro</h3>
+              <p class="team-card__bio">Alejandro trained in Madrid and refined his technique in Amsterdam before arriving in Ibiza. His specialty is skin fades and beard sculpting — he approaches both with the same methodical attention. A consultation with Alejandro feels like a conversation about shape.</p>
+            </div>
+          </article>
+          <article class="team-card card">
+            <div class="team-card__img">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Carlos, Barber and Style Consultant" loading="lazy" width="600" height="800">
+            </div>
+            <div class="team-card__body">
+              <span class="team-card__role">Barber &amp; Style Consultant</span>
+              <h3 class="team-card__name">Carlos</h3>
+              <p class="team-card__bio">Carlos brings a background in fashion alongside his barbering craft — the two inform each other. He reads texture, proportion, and lifestyle when he looks at a client. If you want something new and want to understand why it works, Carlos is the one to talk to.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LOCATION ── -->
+    <section class="section" aria-labelledby="location-title">
+      <div class="container">
+        <div class="split split--reverse">
+          <div class="split__img">
+            <img src="https://images.unsplash.com/photo-1504512485720-7d8fbf882bb0?auto=format&fit=crop&w=900&q=80" alt="Ibiza old town, Mediterranean architecture and sunlight" loading="lazy" width="900" height="1125">
+          </div>
+          <div class="split__content">
+            <span class="eyebrow">Location</span>
+            <h2 class="section-title" id="location-title">In the heart of <em>Eivissa</em></h2>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.25rem;">We are located at Carrer de Josep Riquer Llobet, 7, Local 5, in the centre of Eivissa town. Close to the old city, easy to reach on foot or by transport, and open to both residents and visitors.</p>
+            <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: var(--space-md);">Ibiza's creative community is international and discerning. The island draws people who know quality from experience — and expect it without having to ask. Being here is a statement about what we believe the place deserves.</p>
+            <a href="contact.html" class="btn btn--outline">Find Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COWORKING FEATURE ── -->
+    <section class="section section--alt" aria-labelledby="about-studio-title">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="eyebrow">Beyond the Chair</span>
+          <h2 class="section-title" id="about-studio-title">The studio: a second <em>offering</em></h2>
+          <p class="section-lead">Creative professionals in Ibiza often find the same thing missing — a space that has real character, proper equipment, and none of the compromise. The Barber Show studio was built to fill exactly that space.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-md); margin-top: var(--space-md);">
+          <div style="background: var(--bg); padding: var(--space-md); border-top: 2px solid var(--orange);">
+            <h3 style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); margin-bottom: 0.5rem;">Photographers</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65;">Controllable light, seamless backdrops, and a distinctive environment that adds depth to portraits and editorial work.</p>
+          </div>
+          <div style="background: var(--bg); padding: var(--space-md); border-top: 2px solid var(--orange);">
+            <h3 style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); margin-bottom: 0.5rem;">Videographers</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65;">A space that works for both interview setups and creative shoots. Textured walls, timber, and the option to dress the space as needed.</p>
+          </div>
+          <div style="background: var(--bg); padding: var(--space-md); border-top: 2px solid var(--orange);">
+            <h3 style="font-family: var(--f-display); font-size: var(--fs-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text); margin-bottom: 0.5rem;">Brands &amp; Agencies</h3>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65;">Campaign shoots, product photography, content days — the studio holds a full day's work and is available Monday through Saturday.</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-lg);">
+          <a href="coworking.html" class="btn btn--primary">View the Studio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-band" aria-labelledby="about-cta-title">
+      <div class="container">
+        <span class="eyebrow" style="text-align: center; display: block;">Take the next step</span>
+        <h2 class="section-title" id="about-cta-title">Come in and see for <em>yourself</em></h2>
+        <p class="section-lead">Appointments through Treatwell. Questions by phone or WhatsApp. We are here.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+          <a href="contact.html" class="btn btn--outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+            <span class="logo__main">Barber Show</span>
+            <span class="logo__sub">Ibiza</span>
+          </a>
+          <p>Premium barbershop and creative studio in the heart of Eivissa. Deliberate work. Considered environment.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <div class="footer-contact-item">
+            <span>Address</span>
+            <span>Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>Phone</span>
+            <a href="tel:617746049">617 746 049</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/617746049" target="_blank" rel="noopener noreferrer">Message us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Barber Show Ibiza. All rights reserved.</p>
+        <p>Carrer de Josep Riquer Llobet, 7, Local 5, Eivissa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

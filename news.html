@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — Barber Show Ibiza</title>
+  <meta name="description" content="Ideas on grooming, craft, culture and the creative life in Ibiza. The Barber Show editorial journal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,300&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <a href="#main" class="btn btn--outline" style="position:absolute;top:-100px;left:1rem;z-index:200;transition:top 200ms;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+        <span class="logo__main">Barber Show</span>
+        <span class="logo__sub">Ibiza</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="services.html" class="site-nav__link">Services</a>
+        <a href="coworking.html" class="site-nav__link">Coworking</a>
+        <a href="news.html" class="site-nav__link" aria-current="page">News</a>
+        <a href="about.html" class="site-nav__link">About</a>
+        <a href="contact.html" class="site-nav__link">Contact</a>
+        <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-book" target="_blank" rel="noopener noreferrer">Book Now</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="services.html" class="nav-overlay__link">Services</a>
+    <a href="coworking.html" class="nav-overlay__link">Coworking</a>
+    <a href="news.html" class="nav-overlay__link">News</a>
+    <a href="about.html" class="nav-overlay__link">About</a>
+    <a href="contact.html" class="nav-overlay__link">Contact</a>
+    <a href="https://widget.treatwell.es/establecimiento/the-barber-show/" class="btn btn--primary nav-overlay__book" target="_blank" rel="noopener noreferrer">Book Now</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ── PAGE HEADER ── -->
+    <section style="padding-top: clamp(6rem, 12vw, 9rem); padding-bottom: var(--space-xl); background: var(--bg-card); border-bottom: 1px solid var(--bg-rule);">
+      <div class="container">
+        <span class="eyebrow">The Journal</span>
+        <h1 class="section-title" style="font-size: var(--fs-h1); max-width: 20ch;">Ideas on grooming, craft, <em>culture</em> and creative life in Ibiza</h1>
+        <p class="section-lead">Articles that explore what it means to do deliberate work — in the chair, behind the camera, and in the spaces between.</p>
+      </div>
+    </section>
+
+    <!-- ── ARTICLE LISTING ── -->
+    <section class="section" aria-labelledby="articles-title">
+      <div class="container">
+        <h2 class="section-title" id="articles-title" style="margin-bottom: var(--space-lg);">All <em>articles</em></h2>
+        <div class="news-grid">
+
+          <article class="news-card">
+            <a href="news-article.html" class="news-card__img">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Detail of barber tools and technique" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Craft</span>
+              <h3 class="news-card__title"><a href="news-article.html" style="color: inherit;">On the Art of the Fade</a></h3>
+              <p class="news-card__excerpt">A fade is not a template. It is a response to an individual — to their hairline, their skull shape, the way their hair grows. Every good fade begins with observation.</p>
+              <span class="news-card__date">May 12, 2026</span>
+              <a href="news-article.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a href="news.html" class="news-card__img">
+              <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=800&q=80" alt="Man in thoughtful portrait, natural light" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Culture</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Barbershop as a Third Place</a></h3>
+              <p class="news-card__excerpt">Between home and work, there is a third kind of space — one where the rhythm is different and the conversation earns its depth. The barbershop has always been that space.</p>
+              <span class="news-card__date">April 28, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a href="news.html" class="news-card__img">
+              <img src="https://images.unsplash.com/photo-1493894473891-10fc1e5dbd22?auto=format&fit=crop&w=800&q=80" alt="Creative professional at work in a distinctive space" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Studio</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Why Location Shapes the Work</a></h3>
+              <p class="news-card__excerpt">The space a photographer chooses does not simply frame the shot — it enters it. There is no neutral environment, only choices that either serve the image or compete with it.</p>
+              <span class="news-card__date">April 10, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a href="news.html" class="news-card__img">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Barber working with focus and care" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Ritual</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">The Morning Shave as a Practice</a></h3>
+              <p class="news-card__excerpt">There is a difference between a task completed and a ritual observed. The straight razor shave, done well, belongs firmly in the second category.</p>
+              <span class="news-card__date">March 22, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a href="news.html" class="news-card__img">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Ibiza coastline and Mediterranean light" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Ibiza</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">What Ibiza's Creative Community Keeps Returning For</a></h3>
+              <p class="news-card__excerpt">The island draws people for many reasons. The ones who keep coming back are usually here for something less obvious — for the quality of the light, the pace, and the people who take their work seriously.</p>
+              <span class="news-card__date">March 5, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <a href="news.html" class="news-card__img">
+              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Barber at work, close detail of precision cutting" loading="lazy" width="800" height="500">
+            </a>
+            <div class="news-card__body">
+              <span class="news-card__category">Craft</span>
+              <h3 class="news-card__title"><a href="news.html" style="color: inherit;">Texture, Grain, and the Language of Hair</a></h3>
+              <p class="news-card__excerpt">Hair has a direction, a weight, a personality. Understanding those qualities before the scissors move is the difference between a cut that lasts and one that looks right only on the day.</p>
+              <span class="news-card__date">February 18, 2026</span>
+              <a href="news.html" class="news-card__link">Read Article →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Barber Show Ibiza — home">
+            <span class="logo__main">Barber Show</span>
+            <span class="logo__sub">Ibiza</span>
+          </a>
+          <p>Premium barbershop and creative studio in the heart of Eivissa. Deliberate work. Considered environment.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Navigate</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <div class="footer-contact-item">
+            <span>Address</span>
+            <span>Carrer de Josep Riquer Llobet, 7, Local 5, 07800 Eivissa</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>Phone</span>
+            <a href="tel:617746049">617 746 049</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>WhatsApp</span>
+            <a href="https://wa.me/617746049" target="_blank" rel="noopener noreferrer">Message us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Barber Show Ibiza. All rights reserved.</p>
+        <p>Carrer de Josep Riquer Llobet, 7, Local 5, Eivissa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
